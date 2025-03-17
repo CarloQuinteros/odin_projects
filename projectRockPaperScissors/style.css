@@ -1,0 +1,19 @@
+body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+img{
+    width:200px;
+    display: none;
+}
+
+.container{
+    display: flex;
+    border:2px solid black;
+    justify-content: space-around;
+}
+
+h1,h2,.botones{
+    text-align: center;
+}
