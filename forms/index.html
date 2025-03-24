@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="images/aston-yao-FUPajJEIZ74-unsplash.jpg" alt="Imagen Unsplash" class="fondo">
+        <div class="over">
+            <img src="images/odin-lined.png" alt="Odin project logo" class="logo">
+            <h1>ODIN</h1>
+        </div>
+        <div class="imageBy">
+            <p>Photo by <a href="https://unsplash.com/@astonyao">Aston Yao</a> on <a href="https://unsplash.com/photos/grey-mountain-during-daytime-FUPajJEIZ74?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+        </div>
+    </div>
+    <div id="frame">
+        <p>
+            This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams.
+            <br>Sign up to get started.
+            <br>You <em>know</em> you want to
+        </p>
+        <form action="">
+            <div class="form_left">
+                <label for="firstName">First Name</label>
+                <input type="text" name="" id="firstName">
+                <label for="email">Email</label>
+                <input type="email" name="" id="email" placeholder="example@gmail.com">
+                <label for="password">Password</label>
+                <input type="password" name="" id="password" required minlength="10">
+            </div>
+            <div class="form_right">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="" id="lastName">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="" id="phone">
+                <label for="confipass">Confirm password</label>
+                <input type="password" name="" id="confipass" required minlength="10">
+            </div>
+        </form>
+        <div class="form-side-content">
+            <button type="submit">Create Account</button>
+            <p>
+              Already have an account? <span class="login"><a href="#">Log in</a></span>.
+            </p>
+          </div>
+    </div>
+   
+
+</body>
+</html>
