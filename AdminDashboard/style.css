@@ -1,0 +1,246 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: gray;
+}
+
+img{
+    height: 1.7rem;
+    width: 1.7rem;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;;
+}
+
+#sidebar{
+    display: grid;
+    grid-row: 1/3;
+}
+
+.header {
+    display: inline-grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: white;
+    padding: 15px 25px;
+
+
+}
+
+.header1-left{
+    display:inline-grid;
+    grid-template-columns: 0.5fr 3fr;
+    align-items: center;
+    
+}
+
+
+.header2-left{
+    display:inline-grid;
+    grid-template-columns: 0.5fr 3fr;
+    align-items: center;
+    gap:30px;
+}
+
+.header1-right{
+    display: inline-grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    align-items: center;
+    padding-left: 100px;
+    justify-items: center;
+    
+}
+
+.header2-right{
+    display:inline-grid;
+    grid-template-columns: repeat(3,0.5fr);
+    align-items: center;
+    padding-left: 300px;
+    gap: 30px;
+    justify-items: center;
+}
+
+.header1 input{
+    width: 550px;
+    border-radius: 14px;
+    border: none;
+    height: 28px;
+    background-color: #e2e8f0;
+}
+
+.header1 input:hover{
+    border: solid 2px #1992d4;
+}
+
+.header2-right button{
+    background-color: #1992d4;
+    border-radius: 20px;
+    height: 35px;
+    width: 120px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+#sidebar{
+    background-color: #1788c6;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: 0.2fr 2fr 2fr;
+    gap: 40px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.dashboard,
+.menu1-item,
+.menu2-item
+{   display: grid;
+    grid-template-columns: 25px 100px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+#sidebar img{
+    filter: invert(100%);
+}
+
+#main{
+    border:1px solid black;
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+    padding: 25px;
+  
+}
+
+.main-container{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding-left: 5px;
+}
+
+.main-container .card{
+    display: grid;
+    grid-template-rows: 0.5fr 1.5fr 0.5fr;
+    background-color: white;
+    border-radius: 12px;
+    border-left: solid 10px rgb(243, 190, 1);
+}
+
+.main-container .card h2{
+    margin-bottom:0;
+    padding-left: 15px;
+}
+.main-container .card p{
+    margin-bottom:0;
+    padding-left: 15px;
+}
+
+.main-container .card .main-icons{
+    margin-bottom:0;
+    position: relative;
+    margin-left: 200px;
+}
+
+.annoucements{
+    grid-template-columns: 2/3;
+    grid-template-rows: 2/3;
+    background-color: white;
+    border-radius: 12px;
+    gap:20px;
+    padding: 5px 20px ;
+}
+
+.annoucements .annoucement-card p{
+    font-size: 13px;
+    color: #707070;
+}
+h3{
+    font-size: 15px;
+    font-weight: bold;
+}
+.containertitle {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.announceTitle {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.trendTitle {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.trending{
+    grid-template-columns: 2/3;
+    grid-template-rows: 3/4;
+    background-color: white;
+    border-radius: 12px;
+    gap:20px;
+    padding: 5px 20px ;
+}
+.trending .trending-card{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+}
+.trending-text p{
+    margin: 2px;
+}
+/*
+.annoucements,
+.trending {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px 35px;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 20px;
+    grid-row: 2 / 3;
+}
+
+.annoucements{
+    grid-template-columns: 2/3;
+    grid-template-rows: 2/3;
+}
+
+.trending {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.trending .trending-card {
+    display: grid;
+    grid-template-columns: 1.2fr 3fr;
+    grid-template-rows: repeat(2, 0.5fr);
+}
+
+
+    */
