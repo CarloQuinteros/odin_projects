@@ -213,34 +213,3 @@ h3{
 .trending-text p{
     margin: 2px;
 }
-/*
-.annoucements,
-.trending {
-    background-color: white;
-    border-radius: 12px;
-    padding: 40px 35px;
-    display: grid;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
-    gap: 20px;
-    grid-row: 2 / 3;
-}
-
-.annoucements{
-    grid-template-columns: 2/3;
-    grid-template-rows: 2/3;
-}
-
-.trending {
-    grid-row: 4 / 5;
-    grid-column: 2 / 3;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.trending .trending-card {
-    display: grid;
-    grid-template-columns: 1.2fr 3fr;
-    grid-template-rows: repeat(2, 0.5fr);
-}
-
-
-    */
